@@ -1,3 +1,4 @@
+
 from fastmcp import FastMCP
 import os
 import aiosqlite  # Changed: sqlite3 → aiosqlite
@@ -128,5 +129,5 @@ def categories():
 
 # Start the server
 if __name__ == "__main__":
-    mcp.run(transport="http", host="0.0.0.0", port=8000)
+    mcp.run(transport="streamable-http", host="0.0.0.0", port=8000)
     # mcp.run()
